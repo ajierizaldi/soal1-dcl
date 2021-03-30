@@ -1,0 +1,92 @@
+===Database percobaan
+
+== Table structure for table a1
+
+|------
+|Column|Type|Null|Default
+|------
+|//**KD_JABATAN**//|varchar(255)|No|
+|DESC|varchar(255)|Yes|NULL
+|RANK|int(11)|Yes|NULL
+== Dumping data for table a1
+
+|50002161|General Manager|1
+|50002162|Staf Utama I|2
+|50002163|Staf Utama II|3
+|50002164|Manager|4
+|50002165|Staf Madya I|5
+|50002166|Staf Madya II|6
+|50002167|Superintendent|7
+|50002168|Staf Muda I|9
+|50002169|Staf Muda II|10
+|50002170|Supervisor|11
+|50002171|Staf Pratama I|12
+|50002173|Staf Pratama II|13
+|50002175|Staf Pratama III|14
+|50002176|Pelaksana Utama|15
+|50002177|Pelaksana Madya|16
+|50002178|Pelaksana Muda|17
+|50002179|Pelaksana Pratama|18
+|50004426|Ass. Superintendent|8
+== Table structure for table a2
+
+|------
+|Column|Type|Null|Default
+|------
+|//**NO_BADGE**//|int(11)|No|
+|NAMA|varchar(255)|Yes|NULL
+|SALUTATION|varchar(255)|Yes|NULL
+|TEMPAT_LAHIR|varchar(255)|Yes|NULL
+|DATE_OF_BIRTH|date|Yes|NULL
+|JK|varchar(255)|Yes|Male
+|STATUS_KAWIN|varchar(255)|Yes|Nikah
+|UNIT_KERJA|varchar(255)|Yes|NULL
+|KD_JABATAN|varchar(255)|Yes|NULL
+|STATUS|varchar(30)|Yes|aktif
+== Dumping data for table a2
+
+|3022111|Ronny Sarkasih|Bapak|Bandung|1980-01-08|Male|Nikah|Bagian Rendal Produksi NPK 2|50002167|aktif
+|3022112|Aditya Gunawan|Bapak|Karawang|1992-01-10|Male|Nikah|Bagian Produksi K1 A|50002161|aktif
+|3022113|Aditya Firman|Bapak|Bekasi|1972-02-20|Male|Nikah|Bagian Teknologi Informasi|50002166|aktif
+|3022114|Dendi Nugraha|Bapak|Purwakarta|1989-03-01|Male|Nikah|Bagian Akuntansi|50002163|aktif
+|3022115|Reksi Firmansyah|Bapak|Purwokerto|1980-08-17|Male|Nikah|Bagian Keuangan|50002164|aktif
+|3022116|Dinda Ainun|Ibu|Karawang|1984-09-01|Female|Nikah|Bagian Keuangan|50002163|aktif
+|3022117|Putri Nurul |ibu|Karawang|1993-01-02|Female|Nikah|Bagian Keuangan|50002171|aktif
+|3022118|Ferdiansyah|Bapak|Purwakarta|1992-02-01|Male|Nikah|Bagian Akuntansi|50002170|aktif
+|3022119|Siti Syarifah|Ibu|Karawang|1990-10-02|Female|Nikah|Bagian K3|50002164|aktif
+|3022120|Saipul Jamil|Bapak|Bekasi|1993-11-01|Male|Nikah|Bagian Teknologi Informasi|50002164|aktif
+|3022121|Aliando Rizki|Bapak|Karawang|1997-09-07|Male|Nikah|Bagian Teknologi Informasi|50002171|aktif
+== Table structure for table a3
+
+|------
+|Column|Type|Null|Default
+|------
+|//**FAMILY_ID**//|int(11)|No|
+|NO_BADGE|varchar(255)|Yes|NULL
+|RELATIVE_ID|varchar(255)|Yes|NULL
+|RELATIVE|varchar(255)|Yes|NULL
+|NAMA|varchar(255)|Yes|NULL
+|GENDER|varchar(255)|Yes|NULL
+== Dumping data for table a3
+
+|1|3022111|1|Pasangan|Siti Nurul|Female
+|2|3022111|2|Anak|Dendi Roni|Male
+|3|3022111|2|Anak|Rian|Male
+|4|3022112|1|Pasangan|Fitri Nur|Female
+|5|3022113|1|Pasangan|Nurul Suci|Female
+|6|3022113|2|Anak|Roni Firmansyah|Male
+|7|3022113|2|Anak|Jihan Nurul|Female
+|8|3022113|2|Anak|Ferdian|Male
+|9|3022114|1|Pasangan|Ayu Azhari|Female
+|10|3022114|2|Anak|Jihan Azhari|Female
+|11|3022115|1|Pasangan|Nita Harlita|Female
+|12|3022116|1|Pasangan|M. Rizki Putra|Male
+|13|3022116|2|Anak|Asep Nur Rizki|Male
+|14|3022117|1|Pasangan|Maman Abdul|Male
+|15|3022117|2|Anak|Rizki Nur Maman|Male
+|16|3022118|1|Pasangan|Fitria Nur Apipah|Female
+|17|3022119|1|Pasangan|Dendi Surendi|Male
+|18|3022119|2|Anak|Priska Surendi|Female
+|19|3022120|1|Pasangan|Ayu Ting Ting|Female
+|20|3022120|2|Anak|Nazar|Male
+|21|3022121|1|Pasangan|Prily Nur Apriani|Female
